@@ -4,7 +4,7 @@ A machine learning project that uses a **Random Forest classifier** to predict
 whether a Kepler Object of Interest (KOI) is a real exoplanet or a false positive,
 using NASA's Kepler Exoplanet Search Results dataset.
 
-Built as a final project for DS 100 at the University of San Francisco.
+Built as a final project for BSDS 100 at the University of San Francisco.
 
 ---
 
