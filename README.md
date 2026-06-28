@@ -2,7 +2,7 @@
 
 A machine learning project that uses a **Random Forest classifier** to predict
 whether a Kepler Object of Interest (KOI) is a real exoplanet or a false positive,
-using NASA's Cumulative Kepler KOI dataset.
+using NASA's Kepler Exoplanet Search Results dataset.
 
 Built as a final project for DS 100 at the University of San Francisco.
 
@@ -10,14 +10,14 @@ Built as a final project for DS 100 at the University of San Francisco.
 
 ## Background
 
-NASA's Kepler Space Observatory (2009–2018) monitored over 150,000 stars for small
-dips in brightness caused by planets passing in front of them — a phenomenon called
+NASA's Kepler Space Observatory (2009-2018) monitored over 150,000 stars for small
+dips in brightness caused by planets passing in front of them, a phenomenon called
 a **transit**. Objects flagged this way are called Kepler Objects of Interest (KOIs)
 and are categorized as:
 
-- **Confirmed Planet** – scientifically verified
-- **Candidate** – unconfirmed, needs further study
-- **False Positive** – not actually a planet
+- **Confirmed Planet** - scientifically verified
+- **Candidate** - unconfirmed, needs further study
+- **False Positive** - not actually a planet
 
 With limited telescope time and funding, scientists need a way to prioritize which
 candidates are worth investigating. This project builds a model to help with that.
@@ -33,13 +33,13 @@ candidates are worth investigating. This project builds a model to help with tha
 
 ## Dataset
 
-**Source:** [NASA Exoplanet Archive – Cumulative KOI Table](https://exoplanetarchive.ipac.caltech.edu/)
+**Source:** [Kaggle - Kepler Exoplanet Search Results](https://www.kaggle.com/datasets/nasa/kepler-exoplanet-search-results)
 
 - **9,564 KOIs** with 50+ features each
 - Features include transit depth/duration, orbital period, stellar radius,
   temperature, signal-to-noise ratio, and contamination flags
 - Missing values handled via **median imputation**
-- After cleaning: 9,564 rows × 47 columns, no missing values
+- After cleaning: 9,564 rows x 47 columns, no missing values
 
 The target variable was binarized:
 - `1` = Real planet (Confirmed or Candidate)
@@ -106,6 +106,6 @@ those near 50% are ambiguous and warrant closer study.
 
 ## Authors
 
-- **Aman** – Background, data cleaning, methodology, analysis, notebook
-- **Naiem** – Analysis, model interpretation, limitations, conclusion, notebook
-- **Lucas** – Presentation slides
+- **Aman** - Background, data cleaning, methodology, analysis, notebook
+- **Naiem** - Analysis, model interpretation, limitations, conclusion, notebook
+- **Lucas** - Presentation slides
